@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background origin</title>
+    <style>
+      * {
+        font-family: Roboto;
+      }
+
+      div {
+        margin-bottom: 30px;
+      }
+
+      .exemplo-background-clip {
+        text-align: center;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        border: 15px dashed rgb(215, 16, 233);
+        color: rgb(50, 168, 13);
+        padding: 30px;
+        font-size: 90px;
+        font-weight: 900;
+        background-color: hsl(34, 53%, 82%);
+        background-image: url("img/borboleta.PNG");
+      }
+
+      #padding-box {
+        background-clip: padding-box;
+      }
+
+      #border-box {
+        background-clip: border-box;
+      }
+
+      #content-box {
+        background-clip: content-box;
+      }
+
+      #box-area {
+        background-clip: border-area;
+        border-color: transparent;
+      }
+      .text {
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <hr />
+      <h1>background-clip:</h1>
+      <ul>
+        <li>padding-box</li>
+        <li>border-box</li>
+        <li>conten-box</li>
+      </ul>
+      <hr />
+      background-clip: padding-box;
+      <hr />
+      <div id="padding-box">
+        <p class="exemplo-background-clip">TRILHA DE CSS</p>
+      </div>
+      <hr />
+      background-clip: border-box;
+      <hr />
+      <div id="border-box">
+        <p class="exemplo-background-clip">TRILHA DE CSS</p>
+      </div>
+      <hr />
+      background-clip: content-box;
+      <hr />
+      <div id="content-box">
+        <p class="exemplo-background-clip text">TRILHA DE CSS</p>
+      </div>
+      <hr />
+      background-clip: border-area;
+      <hr />
+      <div >
+        <p id="box-area" class="exemplo-background-clip">TRILHA DE CSS</p>
+      </div>
+      <hr />
+    </section>
+  </body>
+</html>
