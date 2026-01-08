@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-transform</title>
+    <style>
+      h1 {
+        text-indent: 30%;
+        color: red;
+        /*text-decoration-line: line-through;
+        text-decoration-style: wavy;
+        text-decoration-color: aqua; */
+      }
+
+      .text-transform {
+        text-indent: 30px;
+        color: rgb(236, 26, 226);
+        text-transform: capitalize;
+        text-decoration-line: underline;
+        text-decoration-color: green;
+        text-decoration-thickness: 2px;
+      }
+
+      .text-align {
+        text-align: right;
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        text-decoration-color: red;
+        text-decoration-thickness: 5px;
+      }
+
+      a {
+        text-decoration: underline wavy 2px green;
+      }
+
+      #exemplo-letter-spacing{
+        letter-spacing: 15px;
+      }
+
+      #exemplo-word-spacing{
+        word-spacing: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Propriedade <code>text-transform</code></h1>
+      <p class="text-transform">
+        É RESPONSÁVEL por definir quais caracteres vão estar em Maiúsculo,
+        minúsculo, etc.
+      </p>
+      <p class="text-align">Propriedade responsavel por alinha o texto</p>
+      <a href="#"
+        >link deveria ter um underline que foi removida com o text-decoration:
+        none</a
+      >
+    </section>
+    <br />
+    <hr />
+    <hr />
+    <br />
+    <section>
+      <h1>Propriedade letter-spacing</h1>
+      <p id="exemplo-letter-spacing">
+        Adicionanr um espaçamento entre cada CARACTERE do seu texto. Como o nome
+        já diz, espaçamento entre as letras
+      </p>
+      <br />
+      <h1>Propriedade word-spacing</h1>
+      <p id="exemplo-word-spacing">
+        adiciona um espaçamento entre cada PALAVRA do seu texto.Como o nome já
+        diz espaçamento entre as palavras
+      </p>
+    </section>
+  </body>
+</html>
