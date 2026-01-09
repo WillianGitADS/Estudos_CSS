@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedade white-mode</title>
+    <style>
+      section {
+        width: 700px;
+        background-color: azure;
+      }
+      p {
+        background-color: greenyellow;
+        width: 120px;
+        height: 120px;
+      }
+
+      #horizontal-tb {
+        writing-mode: horizontal-tb;
+      }
+
+      #vertical-rl {
+        writing-mode: vertical-rl;
+      }
+
+      #vertical-lr {
+        writing-mode: vertical-lr;
+      }
+
+      #sideways-rl {
+        writing-mode: sideways-rl;
+      }
+
+      #sideways-lr {
+        writing-mode: sideways-lr;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Propriedade <code>white-mode</code></h1>
+      <h3>Define a orientação do texto ( vertical ou horizontal)</h3>
+
+      <h3>Exemplo: writing-mode: horizontal-tb;</h3>
+      <p id="horizontal-tb">
+        Chega de saudade A realizadade é que sem ela não há paz
+      </p>
+
+      <h3>Exemplo: writing-mode: vertical-rl ;</h3>
+      <p id="vertical-rl">
+        Chega de saudade A realizadade é que sem ela não há paz
+      </p>
+
+      <h3>Exemplo: writing-mode: vertical-lr;</h3>
+      <p id="vertical-lr">
+        Chega de saudade A realizadade é que sem ela não há paz
+      </p>
+
+      <h3>Exemplo: writing-mode: sideways-rl ;</h3>
+      <p id="sideways-rl">
+        Chega de saudade A realizadade é que sem ela não há paz
+      </p>
+
+      <h3>Exemplo: writing-mode: sideways-lr;</h3>
+      <p id="sideways-lr">
+        Chega de saudade A realizadade é que sem ela não há paz
+      </p>
+    </section>
+  </body>
+</html>
