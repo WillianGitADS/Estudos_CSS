@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redimensionando Imagens</title>
+    <style>
+      div {
+        margin-bottom: 30px;
+      }
+
+      .exemplo {
+        width: 500px;
+        height: 500px;
+        background-image: url("img/borboleta.PNG");
+      }
+      .auto {
+        background-size: auto;
+      }
+
+      .cover {
+        background-size: cover;
+      }
+
+      .contain {
+        background-size: contain;
+        /*background-repeat: no-repeat;*/
+      }
+
+      .tamanho {
+        background-size: 50%;
+      }
+      .exemplo-x-y {
+        background-size: 33% 100px;
+      }
+
+      .repeat-repeat-x {
+        background-repeat: repeat-X;
+        border: 2px sienna solid;
+      }
+
+      .repeat-space {
+        background-repeat: space;
+      }
+
+      .repeat-round {
+        background-repeat: round;
+      }
+    </style>
+  </head>
+  <body>
+    Background-size: auto
+    <div class="exemplo auto"></div>
+    Background-size: cover
+    <div class="exemplo cover"></div>
+    Background-size: contain
+    <div class="exemplo contain"></div>
+    Background-size: tamanho
+    <div class="exemplo tamanho"></div>
+    Background-size: exemplo-x-y
+    <div class="exemplo exemplo-x-y"></div>
+    Background-size: repeat-x
+    <div class="exemplo repeat-repeat-x"></div>
+    Background-size: space
+    <div class="exemplo repeat-space"></div>
+    Background-size: round
+    <div class="exemplo repeat-round"></div>
+  </body>
+</html>

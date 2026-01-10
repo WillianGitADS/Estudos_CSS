@@ -1,0 +1,59 @@
+/* melhor pratica de importação de fonte */
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* IMPORTANDO DE UM CSS */
+@import url("../css/style_fontes_1.css");
+
+* {
+  font-family: "Sour Gummy";
+}
+
+h1 {
+  color: green;
+  font-style: oblique; 
+}
+
+p {
+  font-family: "Sour Gummy";
+  font-weight: bold;
+  font-style: italic;
+  color: blueviolet;
+  /* font-stretch: extra-expanded; */
+  line-height: 1.2;
+}
+
+ul li {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tamanho {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  color: blue;
+  font-weight: 200;
+  line-height: 40%;
+  border: 2px solid red;
+}
+
+.xx-small {
+  font-size: xx-small;
+}
+.x-small {
+  font-size: x-small;
+}
+.small {
+  font-size: small;
+}
+.medium {
+  font-size: medium;
+}
+.large {
+  font-size: large;
+}
+.x-large {
+  font-size: x-large;
+}
+.xx-large {
+  font-size: xx-large;
+}

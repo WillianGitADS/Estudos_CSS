@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedade: Word-wrap e word-break</title>
+    <style>
+
+      body{
+        background-color: bisque;
+        width: 1200px;
+        margin: 1px auto;
+        padding: 10px;
+      }
+
+      section {
+        display: flexbox;
+        border-left: 10px solid rgb(158, 154, 154);
+        padding: 10px;
+      }
+
+      .exemplo {
+        width: 100px;
+        color: #200909;
+        background-color: rgb(225, 209, 240);
+      }
+      #word-wrap {
+        width: 45%;
+        float: left;
+      }
+      #normal {
+        word-wrap: normal;
+      }
+
+      #break-word {
+        word-wrap: break-word;
+      }
+
+      /*word-break*/
+      #word-break {
+        width: 45%;
+        float: right;       
+      }
+      #word-break-normal {
+        word-break: normal;
+      }
+
+      #word-break-all {
+        word-break: break-all;
+      }
+
+      #word-break-keep-all {
+        word-break: keep-all;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="word-wrap">
+      <h1>Propriedade <code>word-wrap</code></h1>
+      <p>
+        Define, caso uma palavra seja muito grande para caber em uma linha, se
+        elea será quebrada em qualquer caractere para que uma parte dela fique
+        na linha e o restante na próxima, ou se não, toda palavra deve ficar na
+        mesma linha e ultrapassar os limites que definimos para o elemento
+      </p>
+
+      <h3>word-wrap: normal</h3>
+      <p class="exemplo" id="normal">
+        Trilha de CSS TrilhaDeCssTudoJunto Trilha de CSS
+      </p>
+
+      <h3>word-wrap: break-word;</h3>
+      <p class="exemplo" id="break-word">
+        Trilha de CSS TrilhaDeCssTudoJunto Trilha de CSS
+      </p>
+    </section>
+    <section id="word-break">
+      <h1>Propriedade <code>word-break</code></h1>
+      <p>Define quando o nosso texto deve ter uma quebra de linha</p>
+
+      <h3>word-break: normal;</h3>
+      <p class="exemplo" id="word-break-normal">
+        Trilha de CSS TrilhaDeCssTudoJunto Trilha de CSS aklsjdkAJ AJKSDJLA
+        AJSKDLAKSJDALKSJDALSKDJALSKDJQLKWJASLKDABJFF
+      </p>
+
+      <h3>word-break: break-all;</h3>
+      <p class="exemplo" id="word-break-all">
+        Trilha de CSS TrilhaDeCssTudoJunto Trilha de CSS aklsjdkAJ AJKSDJLA
+        AJSKDLAKSJDALKSJDALSKDJALSKDJQLKWJASLKDABJFF
+      </p>
+
+      <h3>word-break: keep-all;</h3>
+      <p class="exemplo" id="word-break-keep-all">
+        Trilha de CSS TrilhaDeCssTudoJunto Trilha de CSS aklsjdkAJ AJKSDJLA
+        AJSKDLAKSJDALKSJDALSKDJALSKDJQLKWJASLKDABJFF
+      </p>
+    </section>
+  </body>
+</html>
