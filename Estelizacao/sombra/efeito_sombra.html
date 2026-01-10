@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efeito de sombra nos elementos</title>
+    <style>
+      body {
+        background-color: rgb(25, 92, 208);
+      }
+
+      section {
+        display: inline-flex;
+        width: 1200px;
+        align-items: center;
+        margin-top: 5px;
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+        border: 10px solid #8f382e;
+        margin: 20px auto;
+        background-color: #fa8072;
+      }
+
+      h1 {
+        background-color: antiquewhite;
+        text-align: center;
+        margin: 0px 20px;
+        padding: 10px;
+        border: #8f382e 2px solid;
+      }
+
+      .def-sombra {
+        margin: 10px 60px;
+        box-shadow: 30px 20px 15px 7px rgb(197, 155, 49),
+          -20px -20px 15px 10px rgb(218, 7, 7), inset -15px -15px 20px -2px red;
+      }
+
+      #filter-drop-shadow {
+        width: 400px;
+        height: 300px;
+        margin: 10px 30px;
+        object-fit: contain;
+        filter: drop-shadow(-5px -5px 10px #f00101);
+      }
+
+      #filter-drop-shadow:hover {
+        width: 400px;
+        height: 300px;
+        margin: 10px 30px;
+        object-fit: contain;
+        filter: drop-shadow(-8px -8px 8px #feee04);
+      }
+
+      /*Adcionando sobre ao texto*/
+
+      .text-shadow {
+        color: black;
+        font-size: 80px;
+        text-align: center;
+        text-shadow: 20px 20px 3px rgba(0, 0, 0, 0.8),
+          40px 40px 5px rgba(0, 0, 0, 0.6), 60px 60px 7px rgba(0, 0, 0, 0.4),
+          80px 80px 9px rgba(0, 0, 0, 0.2);
+      }
+
+      .text-shadow:hover {
+        color: black;
+        font-size: 80px;
+        text-align: center;
+        text-shadow: 20px 20px 3px green, 40px 40px 5px blue,
+          60px 60px 7px yellow, 80px 80px 9px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Propriedade <code>box-shadow</code></h1>
+      <div class="def-sombra"></div>
+      <img src="../sombra/imgCaes .png" id="filter-drop-shadow" />
+    </section>
+    <hr />
+    <section>
+      <h1>Propriedade <br /><code>text-shadow</code></h1>
+      <h2 class="text-shadow">Bem vindo à Trilha de CSS na DIO!</h2>
+    </section>
+  </body>
+</html>
