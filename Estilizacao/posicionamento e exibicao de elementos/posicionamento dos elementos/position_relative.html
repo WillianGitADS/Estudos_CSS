@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Relative</title>
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+        height: 200vh;
+      }
+
+      .inline {
+        display: inline-block;
+      }
+
+      .exemplo {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+      }
+
+      #elemento-1 {
+        background-color: orange;
+      }
+      #elemento-2 {
+        z-index: 2;
+        position: relative;
+        top: 30px;
+        left: 20px;
+        background-color: palevioletred;
+      }
+      #elemento-3 {
+        z-index: 1;
+        position: relative;
+        right: 50px;
+        bottom: 30px;
+        background-color: palegreen;
+      }
+      #elemento-4 {
+        position: relative;
+        top: 50px;
+        background-color: paleturquoise;
+      }
+      #elemento-5 {
+        position: relative;
+        left: 200px;
+        background-color: peachpuff;
+      }
+      #elemento-6 {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionando os elementos em tela</h1>
+    <p>
+      A propriedade position vai nos ajudar a manipular a localização/posição do
+      elemento na sua página.
+    </p>
+
+    <ul>
+      <li style="text-decoration: line-through;"><code>position: static;</code></li>
+      <li><code>position: relative;</code></li>
+      <li style="text-decoration: line-through;"><code>position: absolute;</code></li>
+      <li style="text-decoration: line-through;"><code>position: fixed;</code></li>
+      <li style="text-decoration: line-through;"><code>position: sticky;</code></li>
+    </ul>
+
+    <h3>Exemplos:</h3>
+
+    <div id="elemento-1" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-2" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-3" class="exemplo inline">Elemento 03</div>
+    <hr />
+    <div id="elemento-4" class="exemplo">Elemento A</div>
+    <div id="elemento-5" class="exemplo">Elemento B</div>
+    <div id="elemento-6" class="exemplo">Elemento C</div>
+  </body>
+</html>

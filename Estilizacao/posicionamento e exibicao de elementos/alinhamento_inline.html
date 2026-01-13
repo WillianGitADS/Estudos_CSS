@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinhamento de elementos inline</title>
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+      }
+
+      .exemplo {
+        background-color: palevioletred;
+      }
+
+      #item-01 {
+        height: 30px;
+        vertical-align: middle;
+      }
+
+      #item-02 {
+        text-align: center;
+        vertical-align: baseline;
+      }
+
+      #item-03 {
+        vertical-align: super;
+      }
+
+      .container {
+        border: 1px solid red;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Alinhamento elementos inline</h1>
+      <div class="container">
+        <img src="./img/Instagram_icon.png" alt="" id="item-01" class="exemplo" />
+        <span id="item-02" class="exemplo">item 01</span>
+        <span id="item-03" class="exemplo">item 02</span>
+      </div>
+    </section>
+  </body>
+</html>

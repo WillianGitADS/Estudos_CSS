@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedade Display: block</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        background-color: aquamarine;
+      }
+
+      body {
+        padding: 20px;
+        background-color: antiquewhite;
+        font-family: Roboto, sans-serif;
+        margin: 0px auto;
+      }
+
+      .exemplo {
+        background-color: palevioletred;
+      }
+
+      .inline {
+        color: aliceblue;
+        width: 300px;
+      }
+
+      .inline-block {
+        display: inline-block;
+        width: 200px;
+        height: 70px;
+        margin: 8px;
+        padding: 10px;
+      }
+
+      .menu {
+      background-color: rgba(221, 160, 221, 0.503);
+      text-align: right;
+      }
+
+      .menu ul li{
+        display: inline-block;
+        padding: 20px 40px;
+        background-color: rgba(95, 158, 160, 0.58);
+        border-radius: 100px 0px 0px;
+      }
+
+      .menu ul li a {
+      text-decoration: none;
+      color: rgb(3, 247, 56);
+      font-size: 30px;
+      }
+
+      .esconder-elemento {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade display</h1>
+    <p>
+      A propriedade displau vai determinar como essas caixinhas retangulares
+      irão se comportar na hora de serem exibidas na tela
+    </p>
+    <ul>
+      <li>border-width</li>
+      <li>border-style</li>
+      <li>border-color</li>
+    </ul>
+    <h2>Exemplos</h2>
+    <code>display:block;</code><br />
+    <div class="exemplo">Exemplo 01 display block</div>
+    <p class="exemplo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laudantium
+      esse earum exercitationem iusto modi provident ratione asperiores fugit
+      eaque amet, voluptatum doloremque qui enim ullam eveniet magni tempore?
+      Quibusdam?
+    </p>
+    <br />
+    <code>display: inline;</code><br /><br />
+    <span class="exemplo inline">Exemplo inline 01</span>
+    <span class="exemplo inline">Exemplo inline 02</span>
+    <em class="exemplo inline">Exemplo inline 03</em>
+    <b class="exemplo inline">Exemplo inline 04</b>
+    <br />
+    <code>display: inline-block;</code><br /><br />
+    <span class="exemplo inline-block">Exemplo inline-block 01</span>
+    <span class="exemplo inline-block">Exemplo inline-block 02</span>
+    <em class="exemplo inline-block">Exemplo inline-block 03</em>
+    <b class="exemplo inline-block esconder-elemento">Exemplo inline-block 04</b>
+    <span class="exemplo inline-block">Exemplo inline-block 05</span>
+    <span class="exemplo inline-block">Exemplo inline-block 06</span>
+    <p>
+      Lorem, ipsum
+      <b class="exemplo inline-block">dolor sit amet consectetur</b> adipisicing
+      elit. Totam eius ad vel et aspernatur rerum minus, incidunt dolores
+      consectetur aperiam consequuntur veniam ut quam dolor? Nobis animi quaerat
+      aliquid ullam.
+    </p>
+    <br />
+    <hr />
+    <h3>Menu de navegação</h3>
+    <br />
+    <nav class="menu ">
+      <ul>
+        <li><a href="#">meu link 01</a></li>
+        <li><a href="#" class="esconder-elemento">meu link 02</a></li>
+        <li><a href="#">meu link 03</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

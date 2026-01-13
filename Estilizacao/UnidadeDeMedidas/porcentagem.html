@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidade de medidas Porcentagem</title>
+    <style>
+      html,
+      body {
+        margin: 0px auto;
+        padding-bottom: 30px;
+        font-size: 30px;
+      }
+      
+      body {
+        display: inline;
+      }
+
+      section {
+        background-color: bisque;
+        padding: 30px;
+        border: 2px solid black;
+      }
+
+      h1 {
+        font-size: 34px;
+        font-weight: 900;
+        color: blue;
+      }
+
+      p {
+        text-indent: 15px;
+        font-size: larger;
+      }
+
+      .principal {
+        border: 2px solid green;
+        background-color: red;
+        width: 500px;
+        height: 300px;
+      }
+
+      .porcentagem {
+        background-color: yellow;
+        border: 2px solid blue;
+        width: 50%;
+        height: 50%;
+      }
+
+      #elemento-pai {
+        background-color: azure;
+        border: 5PX SOLID black;
+        width: 500px;
+        font-size: 40px;
+      }
+
+      #exemplo-pixel {
+        font-size: 30px;
+        background-color: aqua;
+        width: 300px;
+      }
+
+      #exemplo-porcentagem {
+        font-size: 30%;
+        background-color: greenyellow;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <section>
+      <h1>Unidade relativas: Porcentagem</h1>
+      <p>
+        A porcentagem é uma unidade de medida que irá utilizar como referÊncia o
+        elemento pai para se basear, podendo alterar os resultados de acordo com
+        o lugar em que está inserido.
+      </p>
+    </section>
+    <section>
+      <div class="principal">
+        <div class="porcentagem"></div>
+      </div>
+    </section>
+    <br />
+      <h1>Porcetagem</h1>
+      <p>Pixel vs Porcentagem</p>
+      <div id="exemplo-pixel">300px</div>
+      <div id="exemplo-porcentagem">50%</div>
+        <br><br><br>
+        <p>Elemento pai possui 500px de largura e um font-size de 40px.</p>
+      <div id="elemento-pai">
+        <div id="exemplo-pixel">300px</div>
+        <div id="exemplo-porcentagem">30%</div>
+      </div>
+  </body>
+</html>
