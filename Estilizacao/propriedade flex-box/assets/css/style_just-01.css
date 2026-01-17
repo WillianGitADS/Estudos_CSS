@@ -1,0 +1,105 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  */
+html {
+  background-color: rgb(1, 2, 37);
+}
+body {
+  background-color: rgb(126, 129, 82);
+  width: 1000px;
+  margin: 0px auto;
+  border: 2px solid violet;
+}
+
+h1 {
+  margin: 10px 100px;
+}
+
+.titulo {
+  text-align: center;
+  color: blue;
+  writing-mode: horizontal;
+}
+
+.exemplo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: burlywood;
+  margin: 10px auto;
+  width: 900px;
+  height: 150px;
+}
+
+section h1 {
+  writing-mode: vertical-lr;
+  writing-mode: sideways-lr;
+  margin: 15px;
+  /* border: 1px solid violet; */
+}
+
+#principal-02 {
+  background-color: rgb(98, 109, 109);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 900px;
+  margin: 30px auto;
+  align-items: flex-start;/*Alinhamento eixo transversal*/
+}
+
+.exemplo-02 {
+  display: flex;
+  flex-direction: column; /*define display em colunas para os elementos*/
+  flex-wrap: wrap;
+  background-color: rgb(15, 202, 90);
+  margin: 30px 10px;
+  width: 130px;
+  height: 700px;
+}
+
+.exemplo .divs {
+  background-color: beige;
+  margin: auto 2px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: rgb(239, 42, 12);
+}
+
+.exemplo-02 .divs {
+  background-color: beige;
+  margin: 2px auto;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: blue;
+}
+
+.divs p {
+  justify-items: center;
+}
+#flex-start {
+  justify-content: flex-start;
+}
+
+#flex-end {
+  justify-content: flex-end;
+}
+
+#center {
+  justify-content: center;
+}
+#space-between {
+  justify-content: space-between;
+}
+
+#space-around {
+  justify-content: space-around;
+}
+
+#space-evenly {
+  justify-content: space-evenly;
+}
