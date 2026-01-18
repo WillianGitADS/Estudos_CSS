@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-grow, flex-shrink, flex-basis</title>
+    <style>
+      .container-g {
+        background-color: blueviolet;
+        padding: 10px;
+        margin-top: 20px;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      /*flex-grow*/
+      .item-g {
+        flex-grow: 1;
+        background-color: yellow;
+      }
+
+      .item-02-g {
+        flex-grow: 2;
+        align-self: flex-end;
+      }
+
+      /*flex-shrink*/
+      .container-s {
+        background-color: blueviolet;
+        padding: 10px;
+        margin-top: 20px;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .item-s {
+        background-color: burlywood;
+        width: 100px;
+        height: 50px;
+      }
+
+      .item-01-s {
+        flex-shrink: 5;
+        align-self: center;
+      }
+
+      .item-02-s {
+        flex-shrink: 2;
+        align-self: flex-end;
+      }
+
+      /*flex-basis*/
+
+      .container-b {
+        background-color: rgb(43, 226, 186);
+        padding: 10px;
+        margin-top: 20px;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .item-b {
+        background-color: burlywood;
+        width: 100px;
+        height: 50px;
+        flex-basis: 100px;
+      }
+
+      .item-01-b {
+        flex-basis: 120px;
+      }
+
+      .item-02-b {
+        flex-basis: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex-grow</h1>
+    <div class="container-g">
+      <div class="item-g item-01-g">item 01</div>
+      <div class="item-g item-02-g">item 02</div>
+      <div class="item-g item-03-g">item 03</div>
+    </div>
+    <div class="container-g">
+      <div class="item-g item-01-g">DIO</div>
+      <div class="item-g item-02-g">Bem-vindo</div>
+      <div class="item-g item-03-g">Trilha de curso de CSS</div>
+    </div>
+
+    <h1>flex-shrink</h1>
+    <div class="container-s">
+      <div class="item-s item-01-s">item 01</div>
+      <div class="item-s item-02-s">item 02</div>
+      <div class="item-s item-03-s">item 03</div>
+    </div>
+    <div class="container-s">
+      <div class="item-s item-01-s">DIO</div>
+      <div class="item-s item-02-s">Bem-vindo</div>
+      <div class="item-s item-03-s">Trilha de curso de CSS</div>
+    </div>
+
+    <h1>flex-shrink</h1>
+    <div class="container-b">
+      <div class="item-b item-01-b">item 01</div>
+      <div class="item-b item-02-b">item 02</div>
+      <div class="item-b item-03-b">item 03</div>
+    </div>
+    <div class="container-b">
+      <div class="item-b item-01-b">DIO</div>
+      <div class="item-b item-02-b">Bem-vindo</div>
+      <div class="item-b item-03-b">Trilha de curso de CSS</div>
+    </div>
+  </body>
+</html>

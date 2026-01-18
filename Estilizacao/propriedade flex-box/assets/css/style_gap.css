@@ -1,0 +1,47 @@
+.container {
+  background-color: palegreen;
+  margin: 20px;
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 20px;
+  /*gap: linhas colunas*/
+}
+
+.item {
+  padding: 2px;
+  background-color: orange;
+  order: 10; /*TODOS OS ITEM TEM ORDEM 10*/
+}
+
+#container-01 {
+  flex-direction: row;
+}
+
+#container-02 {
+  flex-direction: column;
+}
+
+/*Alterando a ordem dos itens*/
+/*Order*/
+/*por padrão todos os item tem order = 0*/
+/*Posso usar valores negativos*/
+
+.item-04 {
+  order: 1;
+}
+
+.item-10 {
+  order: 5;
+}
+
+.item-07 {
+  order: 0;
+}
+
+.item-05{
+  order: -1;
+}
